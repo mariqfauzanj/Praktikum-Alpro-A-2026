@@ -1,33 +1,36 @@
+print(25+30)
+
 # operator
 
 sum1 = 100 + 50      # 150 (100 + 50)
 sum2 = sum1 + 250    # 400 (150 + 250)
 sum3 = sum2 + sum2   # 800 (400 + 400)
+print(sum3)
 
 # operator aritmatika
 
-x = 15
-y = 4
+x = 40
+y = 7
 
-print(x + y)
-print(x - y)
-print(x * y)
-print(x / y)
-print(x % y)
-print(x ** y)
-print(x // y)
+print(x + y)    # penjumlahan
+print(x - y)    # pengurangan
+print(x * y)    # perkalian
+print(x / y)    # pembagian
+print(x % y)    # modulus (sisa bagi)
+print(x ** y)   # pangkat
+print(x // y)   # pembagian bulat
 
 # operator assignment
 
-numbers = [1, 2, 3, 4, 5]
+angka = [1, 2, 3, 4, 5]
 
-if (count := len(numbers)) > 3:
-    print(f"List has {count} elements")
+if (jumlah := len(angka)) > 4:
+    print(f"Terdapat {jumlah} elemen.")
 
 # operator perbandingan
 
-x = 5
-y = 3
+x = 9
+y = 10
 
 print(x == y)
 print(x != y)
@@ -38,51 +41,50 @@ print(x <= y)
 
 # operator logika
 
-x = 5
+x = 9
 print(x > 0 and x < 10) # operator and
 
 
-x = 5
+x = 8
 print(x < 5 or x > 10) # operator or
 
 
-x = 5
+x = 7
 print(not(x > 3 and x < 10)) # operator not
 
 # operator identitas
 
-x = ["apple", "banana"]
-y = ["apple", "banana"]
+x = ["kelinci", "burung"]
+y = ["kelinci", "burung"]
 z = x
 
 print(x is z)
 print(x is y)
-print(x == y)
 
-x = ["apple", "banana"]
-y = ["apple", "banana"]
+x = ["kelinci", "burung"]
+y = ["kelinci", "burung"]
 
 print(x is not y)
 
-x = [1, 2, 3]
-y = [1, 2, 3]
+x = [10, 9, 8]
+y = [10, 9, 8]
 
 print(x == y) # is, mengecek ketika dua variable memiliki nilai yang sama di memori
 print(x is y) # ==, mengecek ketika dua variable menunjuk ke object yang sama
 
 # operator keanggotaan
 
-fruits = ["apple", "banana", "cherry"]
-print("banana" in fruits)
+angka = ["dua", "tiga", "empat"]
+print("empat" in angka)
 
-fruits = ["apple", "banana", "cherry"]
-print("pineapple" not in fruits)
+angka = ["dua", "tiga", "empat"]
+print("lima" not in angka)
 
-text = "Hello World"
+text = "Universitas Riau"
 
-print("H" in text)
-print("hello" in text)
-print("z" not in text)
+print("U" in text)
+print("Universitas" in text)
+print("g" not in text)
 
 # operator bitwise
 
@@ -91,6 +93,12 @@ print(6 & 3)
 print(6 | 3)
 
 print(6 ^ 3)
+
+print(~3)
+
+print(3 << 2)
+
+print(8 >> 2)
 
 # operator presedens
 

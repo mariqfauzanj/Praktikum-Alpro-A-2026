@@ -1,54 +1,47 @@
 # if
 
-a = 33
-b = 200
+a = 70
+b = 250
 if b > a:
-  print("b is greater than a")
+  print("b lebih besar a")
 
-number = 15
-if number > 0:
-  print("The number is positive")
-
-age = 20
-if age >= 18:
-  print("You are an adult")
-  print("You can vote")
-  print("You have full legal rights")
-
-is_logged_in = True
-if is_logged_in:
-  print("Welcome back!")
+apakah_masuk = True
+if apakah_masuk:
+  print("Selamat datang!")
 
 # elif
 
-a = 33
-b = 33
+a = 35
+b = 35
 if b > a:
-  print("b is greater than a")
+  print("b lebih besar dari a")
 elif a == b:
-  print("a and b are equal")
+  print("a dan b sama")
 
-score = 75
+nilai = 75
+if nilai >= 85:
+  print("Nilai: A")
+elif nilai >= 75:
+  print("Nilai: B")
+elif nilai >= 60:
+  print("Nilai: C")
+elif nilai >= 50:
+  print("Nilai: D")
+elif nilai >= 40:
+  print("Nilai: E")
+elif nilai < 40:
+  print("Nilai: F")
 
-if score >= 90:
-  print("Grade: A")
-elif score >= 80:
-  print("Grade: B")
-elif score >= 70:
-  print("Grade: C")
-elif score >= 60:
-  print("Grade: D")
+# else
 
-age = 25
-
-if age < 13:
-  print("You are a child")
-elif age < 20:
-  print("You are a teenager")
-elif age < 65:
-  print("You are an adult")
-elif age >= 65:
-  print("You are a senior")
+a = 700
+b = 699
+if b > a:
+  print("b lebih besar dari a")
+elif a == b:
+  print("a dan b sama")
+else:
+  print("a lebih besar dari b")
 
 # shorthand if
 
@@ -58,70 +51,45 @@ if a > b: print("a is greater than b")
 
 # shorthand if ... else
 
-a = 2
-b = 330
+a = 20
+b = 300
 print("A") if a > b else print("B")
 
-a = 10
-b = 20
-bigger = a if a > b else b
-print("Bigger is", bigger)
-
-a = 330
-b = 330
+a = 350
+b = 350
 print("A") if a > b else print("=") if a == b else print("B")
 
 # nested if
 
 x = 41
-
 if x > 10:
-  print("Above ten,")
-  if x > 20:
-    print("and also above 20!")
+  print("Di atas 10,")
+  if x > 25:
+    print("dan di atas 25!")
   else:
-    print("but not above 20.")
+    print("namun tidak di atas 25.")
 
-age = 25
-has_license = True
-
-if age >= 18:
-  if has_license:
-    print("You can drive")
-  else:
-    print("You need a license")
-else:
-  print("You are too young to drive")
-
-score = 85
-attendance = 90
+nilai = 85
+kehadiran = 90
 submitted = True
 
-if score >= 60:
-  if attendance >= 80:
+if nilai >= 50:
+  if kehadiran >= 75:
     if submitted:
-      print("Pass with good standing")
+      print("Lulus.")
     else:
-      print("Pass but missing assignment")
+      print("Lulus dengan nilai B+.")
   else:
-    print("Pass but low attendance")
+    print("Lulus dengan nilai C.")
 else:
-  print("Fail")
+  print("Ga lulus.")
 
 # pass statement
 
-age = 16
-
-if age < 18:
-  pass # TODO: Add underage logic later
+a = 50
+if a < 0:
+  print("Nilai negatif.")
+elif a == 0:
+  pass # Nol, tanpa hasil
 else:
-  print("Access granted")
-
-value = 50
-
-if value < 0:
-  print("Negative value")
-elif value == 0:
-  pass # Zero case - no action needed
-else:
-  print("Positive value")
+  print("Nilai positif.")

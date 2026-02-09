@@ -1,35 +1,29 @@
-day = 4
-match day:
+bahasa = 3
+match bahasa:
   case 1:
-    print("Monday")
+    print("English")
   case 2:
-    print("Tuesday")
+    print("Indonesia")
   case 3:
-    print("Wednesday")
+    print("Python")
   case 4:
-    print("Thursday")
-  case 5:
-    print("Friday")
-  case 6:
-    print("Saturday")
-  case 7:
-    print("Sunday")
+    print("C")
 
-day = 4
-match day:
+bahasa = 4
+match bahasa:
   case 6:
-    print("Today is Saturday")
+    print("Rust")
   case 7:
-    print("Today is Sunday")
+    print("C")
   case _:
-    print("Looking forward to the Weekend")
+    print("Python")
 
-month = 5
-day = 4
-match day:
-  case 1 | 2 | 3 | 4 | 5 if month == 4:
-    print("A weekday in April")
-  case 1 | 2 | 3 | 4 | 5 if month == 5:
-    print("A weekday in May")
+suka = 5
+pilih = 4
+match pilih:
+  case 1 | 2 | 3 | 4 | 5 if suka == 4:
+    print("C")
+  case 1 | 2 | 3 | 4 | 5 if suka == 5:
+    print("Python")
   case _:
-    print("No match")
+    print("None")
